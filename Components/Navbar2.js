@@ -5,21 +5,23 @@ import Logo from "./Logo";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
-    { text: "Home", href: "/" },
-    { text: "About Us", href: "/about" },
-    { text: "Contact", href: "/contact" },
-    { text: "Sign In", href: "/signIn" },
+    { text: "Dashboard", href: " " },
+    { text: "Feedback", href: "/feedback" },
+    { text: "Customers", href: "/customer" },
+    { text: "Report", href: "/report" },
+
 ];
-const Navbar = () => {
+const Navbar2 = () => {
     const [navActive, setNavActive] = useState(null);
     const [activeIdx, setActiveIdx] = useState(-1);
     const myLoader = ({ src, width, quality }) => {
         return `logo.png`
     }
+
     return (
         <header>
             <nav className={`nav`}>
-                <Link href={"/"}>
+                <Link href={""}>
                     <a>
                         <Image loader={myLoader} src="logo.png" alt="Picture of the author" width={250} height={65}
                         />
@@ -51,4 +53,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar2;
